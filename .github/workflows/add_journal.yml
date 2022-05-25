@@ -25,4 +25,4 @@ jobs:
           git add $filename
           git commit -m "Journal added by github action"
       - name: Push changes
-        uses: ad-m/github-push-action@main
+        uses: ad-m/github-push-action
