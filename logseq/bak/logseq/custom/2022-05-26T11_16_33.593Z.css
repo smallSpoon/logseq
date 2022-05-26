@@ -408,7 +408,7 @@
     }
     .form-checkbox:checked {
         border-color: var(--ls-secondary-text-color);
-        background-color: #385068;
+        background-color: var(--ls-secondary-background-color);
     }
     .dark-theme .marker-switch:hover {
         border-color: var(--ls-link-text-color);
