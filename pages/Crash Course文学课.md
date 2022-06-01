@@ -1,9 +1,8 @@
 - 课程链接：[十分钟速成课·文学](https://space.bilibili.com/5981968/favlist?fid=973425868)
-- 进度： [:progress {:max 44 :value 5}]
+- 进度： [:progress {:max 44 :value 8}]
 -
 - ## S01E01-08
 - 第02集：五步格诗与斗熊游戏 - [[罗密欧与朱丽叶]]
-  collapsed:: true
 	- 莎士比亚不是罗朱故事的原创者，这个故事的直接素材是一首三千行的叙事诗，“Romeus和Juliet的悲剧史” by亚瑟·布洛克——一部道德警示恒言
 	- 但亚瑟·布洛克也不是罗朱故事的第一书写者，罗朱故事至少可以追溯到奥维德的《[变形记](https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E8%AE%B0/3531832?fr=aladdin#/)》
 	- 莎士比亚改动了故事，使故事更复杂，鼓励观众更同情主人公
