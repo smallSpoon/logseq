@@ -615,7 +615,7 @@
     .ls-block .block-children > .ls-block::before {
         position: absolute;
         background-color: #708a8a;
-        top: -1.1em;
+        top: -1em;
         bottom: 0;
         left: calc(var(--ls-block-bullet-threading-width) * -1);
         border-left: var(--ls-block-bullet-threading-width) solid transparent;
@@ -773,4 +773,49 @@ progress {
   }
 
 
+/* Mark颜色 */
+    span[data-ref="#gray"],
+    span[data-ref="#yellow"],
+    span[data-ref="#blue"],
+    span[data-ref="$red"],
+    span[data-ref="$green"],
+    span[data-ref="$blue"] {
+      display: none;
+    }
+    span[data-ref="#gray"] + mark {
+      background: #bbbfc4 !important;
+      color: #000 !important;
+    }
+    span[data-ref="#yellow"] + mark {
+      background: ##fdf6e3 !important;
+      color: #000 !important;
+    }
+    span[data-ref="#blue"] + mark {
+      background: #b9ceff !important;
+      color: #000 !important;
+    }
+    span[data-ref="$red"] + mark {
+      color: #d65652 !important;
+      background: unset !important;
+      padding: 0;
+      border-radius: 0;
+    }
+    span[data-ref="$green"] + mark {
+      color: #448361 !important;
+      background: unset !important;
+      padding: 0;
+      border-radius: 0;
+    }
+    span[data-ref="$blue"] + mark {
+      color: #337ea9 !important;
+      background: unset !important;
+      padding: 0;
+      border-radius: 0;
+    }
 
+
+body {
+   transform: scale(0.85);
+   transform-origin: 0 0;
+   // add prefixed versions too.
+}
