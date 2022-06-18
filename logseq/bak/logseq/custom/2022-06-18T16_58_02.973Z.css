@@ -615,7 +615,7 @@
     .ls-block .block-children > .ls-block::before {
         position: absolute;
         background-color: #708a8a;
-        top: -1.15em;
+        top: -1em;
         bottom: 0;
         left: calc(var(--ls-block-bullet-threading-width) * -1);
         border-left: var(--ls-block-bullet-threading-width) solid transparent;
@@ -773,4 +773,49 @@ progress {
   }
 
 
+/* Mark颜色 */
+    span[data-ref="#gray"],
+    span[data-ref="#yellow"],
+    span[data-ref="#blue"],
+    span[data-ref="$red"],
+    span[data-ref="$green"],
+    span[data-ref="$blue"] {
+      display: none;
+    }
+    span[data-ref="#gray"] + mark {
+      background: #bbbfc4 !important;
+      color: #000 !important;
+    }
+    span[data-ref="#yellow"] + mark {
+      background: ##fdf6e3 !important;
+      color: #000 !important;
+    }
+    span[data-ref="#blue"] + mark {
+      background: #b9ceff !important;
+      color: #000 !important;
+    }
+    span[data-ref="$red"] + mark {
+      color: #d65652 !important;
+      background: unset !important;
+      padding: 0;
+      border-radius: 0;
+    }
+    span[data-ref="$green"] + mark {
+      color: #448361 !important;
+      background: unset !important;
+      padding: 0;
+      border-radius: 0;
+    }
+    span[data-ref="$blue"] + mark {
+      color: #337ea9 !important;
+      background: unset !important;
+      padding: 0;
+      border-radius: 0;
+    }
 
+/* 页面符号 */
+{
+  "disabled": false,
+  "blockStyles": "{\"seedlings\":{\"prefix\":\"语法\",\"character\":\"⛱ \",\"color\":\"#708a8a\"},\"34baed77-4220-4211-9ac0-cf881148f525\":{\"prefix\":\"本课重点\",\"character\":\"⛱ \",\"color\":\"#708a8a\"},\"e37a281f-6848-45e4-ba05-7d19c4b7102d\":{\"prefix\":\"去哪里买\",\"character\":\"🛒 \",\"color\":\"#708a8a\"},\"d6cfaeb1-1c87-4ae5-ba34-139354fe0995\":{\"prefix\":\"中庭角落的情书\",\"character\":\"📭 \",\"color\":\"#708a8a\"},\"f2cd4cb2-0514-4c27-a683-4424f209161a\":{\"prefix\":\"应用\",\"character\":\"🔗 \",\"color\":\"#708a8a\"},\"08f37b5f-7184-4679-9958-ebc0b508a878\":{\"prefix\":\"速查\",\"character\":\"🔎 \",\"color\":\"#708a8a\"},\"69984d94-b21f-4bec-bcc1-1105bd4ff660\":{\"prefix\":\"读书笔记\",\"character\":\"📚 \",\"color\":\"#708a8a\"},\"284fad14-f44a-4a7b-b721-9e0cedcff998\":{\"prefix\":\"日语笔记\",\"character\":\"🍱 \",\"color\":\"#708a8a\"},\"f3c9cc5f-0a5c-4832-93fd-14c527888529\":{\"prefix\":\"ff14\",\"character\":\"🌱 \",\"color\":\"#708a8a\"},\"efe2042e-ab47-4009-8776-3411b0d47605\":{\"prefix\":\"概念\",\"character\":\"⛱ \",\"color\":\"#708a8a\"},\"14b392bd-2e11-415f-b118-736c7867ee53\":{\"prefix\":\"ch\",\"character\":\"📖\",\"color\":\"#708a8a\"}}"
+}
+.block-reference-container{background-color:#eee;border:1px solid #999;border-radius:4px;box-shadow:4px 4px 10px rgba(0,0,0,.4);left:50%;min-width:33%;padding:24px;position:absolute;top:15%;transform:translate(-50%)}.block-ref-style,.block-ref-style-wrapper{display:flex;flex-direction:row}.block-ref-style{justify-content:space-between}.btn-block-remove{border:none;visibility:hidden}.block-ref-style-wrapper:hover .btn-block-remove{visibility:visible}.block-ref-input{background-color:#ddd;border-radius:4px;font-size:20px;margin:4px}.fix{width:5em}.char{width:2em}.color{width:10em}.btn-add{margin-top:4px}.closeButton{color:rgba(0,0,0,.3);cursor:pointer;font-family:sans-serif;padding:2px 4px;position:absolute;right:4px;top:4px}
