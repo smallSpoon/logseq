@@ -18,7 +18,7 @@
  ;; When creating the new journal page, the app will use your template if there is one.
  ;; You only need to input your template name here.
  :default-templates
- {:journals ""}
+ {:journals "TODO 日语动词变形练习"}
 
  ;; Whether to enable hover on tooltip preview feature
  ;; Default is true, you can also toggle this via setting page
@@ -178,9 +178,8 @@
  :ref/linked-references-collapsed-threshold 50
  :publishing/all-pages-public? true
  :feature/enable-journals? false
- :default-home {:page "演技教材"}
- :favorites ["模板页面"]
- :journal/page-title-format "yyyy年MM月dd日"
+ :default-home {:page "演技教材·自习"}
+ :favorites []
 
  ;; any number between 0 and 1 (the greater it is the faster the changes of the next-interval of card reviews) (default 0.5)
  ;; :srs/learning-fraction 0.5

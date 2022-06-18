@@ -19,10 +19,42 @@
 
 
 /* { == 1. Global ==> */
-    @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;700&display=swap");
     :root {
-        font-size: 1.0375rem;
+        font-size: 1.105rem;
     }
+
+    /* START Journal Header */
+    .journal-title .title::before,
+    .is-journals .title::before {
+        content: "📅";
+        font-size: 0.8em;
+        margin-right: 10px;
+        vertical-align: text-bottom;
+    }
+
+    /* START External Link */
+
+    .external-link::before {
+        content: "🔗";
+        margin-right: 3px;
+    }
+
+    .external-link {
+        border-bottom: 1px solid var(--external-link-color);
+        color: var(--external-link-color);
+    }
+
+    .external-link:hover {
+        border-bottom: 1px solid var(--external-link-color-hover);
+        color: var(--external-link-color-hover);
+    }
+
+    .block-content[data-type="annotation"] a.prefix-link::before {
+    content: "🔖 ";
+    }
+
+/* External Link END */
     
     /* {{ 1.1.Color Palette & Variables */
     /* Styles that apply to both dark & light mode */
@@ -101,7 +133,7 @@
         --ls-selection-background-color: rgba(0, 0, 0, 0.1);
         --ls-active-primary-color: #8ec2c2;
         --ls-secondary-text-color: rgba(33, 33, 33, 0.8);
-        --ls-link-text-color: rgba(var(--ls-accent-rgb), 0.9);
+        --ls-link-text-color: rgba(var(--ls-accent-rgb), 0.9);;
         --ls-link-text-hover-color: rgba(var(--ls-accent-rgb), 1);
         --ls-page-inline-code-bg-color: rgba(0, 0, 0, 0.1);
         --ls-page-blockquote-border-color: rgba(var(--ls-accent-rgb), 0.25);
@@ -117,7 +149,12 @@
     #main-content-container {
         margin-top: 1.9em;
         padding-top: 1.9em !important;
+
     }
+
+
+/* Journal Header END */
+
     /* Add some white space to the right, s, subtracting the bullets and spacing, the real start of the content on the left is offset. */
     .cp__sidebar-main-content {
         margin-right: 24px;
@@ -192,6 +229,7 @@
     /* External Links */
     a.external-link {
         border-bottom: 1px dashed;
+
     }
     a.external-link:after {
         position: relative;
@@ -204,6 +242,8 @@
         background-color: var(--ls-link-text-color);
         content: "";
         transition: 0.3s;
+
+
     
         mask-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGDSURBVHgBtZaNcYMwDIUfGzgbqBuUDcwkaTdoJ4AN0gmaTNJu0GyQdILSCUjRIa6yMT+x4d29O7CNPmMLmQzryYhZ39hIDChbX1vflPn+2JqwoigA8t20fsEKogCslrZ6C6iG/UhAo/qLwBhCpCzc2T+OjNu1PquxB0TqpIK8e33k3Rdw3zJKnyqIVe2VtF1UW4b/PW0QuawaaDyYH5iBVyQCSQA2ALvJPRRQT8QgUdUEjPWs+r6QqHIGlsPdv/1UMIuuNJ3Fh4UwI8+WcAvAZQxEcJNCm2ZgOYZVpodRCPaAYblqxP0MK4wv42sA9oGJzPRLEQez8oDBfILwhHl1eAuOcL/RgZ48mF+uqhnY3dI1b781zHgBl8AKuSZEiOCe1KF2P/V1UiQBa6+Ps7OBu4w2FQi4308RmJDWCePH02K9qSCcQLuRcTncZbaIFKH7HPRe8ptmYp4A/0bUCO93lDhgg2U/RqPlag3o4toYK0JXmvoM1fW0QuIhmmEezvoVJ+sPourrpWEel2gAAAAASUVORK5CYII=");
         -webkit-mask-box-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGDSURBVHgBtZaNcYMwDIUfGzgbqBuUDcwkaTdoJ4AN0gmaTNJu0GyQdILSCUjRIa6yMT+x4d29O7CNPmMLmQzryYhZ39hIDChbX1vflPn+2JqwoigA8t20fsEKogCslrZ6C6iG/UhAo/qLwBhCpCzc2T+OjNu1PquxB0TqpIK8e33k3Rdw3zJKnyqIVe2VtF1UW4b/PW0QuawaaDyYH5iBVyQCSQA2ALvJPRRQT8QgUdUEjPWs+r6QqHIGlsPdv/1UMIuuNJ3Fh4UwI8+WcAvAZQxEcJNCm2ZgOYZVpodRCPaAYblqxP0MK4wv42sA9oGJzPRLEQez8oDBfILwhHl1eAuOcL/RgZ48mF+uqhnY3dI1b781zHgBl8AKuSZEiOCe1KF2P/V1UiQBa6+Ps7OBu4w2FQi4308RmJDWCePH02K9qSCcQLuRcTncZbaIFKH7HPRe8ptmYp4A/0bUCO93lDhgg2U/RqPlag3o4toYK0JXmvoM1fW0QuIhmmEezvoVJ+sPourrpWEel2gAAAAASUVORK5CYII=");
@@ -264,6 +304,7 @@
     a.open-block-ref-link {
         background-color: var(--ls-link-text-color);
         color: var(--ls-primary-background-color);
+
     }
     /* brackets in links */
     .page-reference .bracket {
@@ -408,7 +449,7 @@
     }
     .form-checkbox:checked {
         border-color: var(--ls-secondary-text-color);
-        background-color: var(--ls-secondary-background-color);
+        background-color: #385068;
     }
     .dark-theme .marker-switch:hover {
         border-color: var(--ls-link-text-color);
